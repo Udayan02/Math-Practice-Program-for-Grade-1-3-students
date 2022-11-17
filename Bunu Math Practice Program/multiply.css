@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1e1f21;
+  font-family: Fredoka One;
+}
+.multiplication-page-content {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+#multiply-page-greeting {
+  display: flex;
+  color: white;
+  height: 30vh;
+  width: 60vw;
+  margin: auto;
+  transform: translate(0, 6%) scale(0.7, 0.7);
+  font-size: 2rem;
+}
+.multiplication-questions {
+  height: 70vh;
+  font-size: 5em;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  border: 1px solid blue;
+  align-items: end;
+  position: relative;
+}
+.q1-m1-cross {
+  position: absolute;
+  left: 0;
+}
+.question-m1-part1 {
+  border: 2px solid red;
+  width: 80%;
+}
+.question-m1-part2 {
+  border: 2px solid green;
+  width: 80%;
+}
+.q-m1-p1-n1 {
+  border: 2px solid blue;
+}

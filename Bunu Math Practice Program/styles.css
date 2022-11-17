@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#home-page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body {
+  background-color: #1e1f21;
+  font-family: Fredoka One;
+}
+h1,
+h2 {
+  color: #ed0077;
+  font-family: Fredoka One;
+  font-size: 2em;
+}
+h1 {
+  font-size: 5em;
+}
+h2 {
+  color: #b4ff79;
+  text-shadow: 10px 0px 3em currentColor;
+}
+/* #martha-index {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(-15%, 0);
+}
+#smile-on-hover {
+  border-top: #d5815a 1px solid;
+  width: 33px;
+  height: 10px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: translate(-510%, 60%);
+  opacity: 0;
+  background-color: #d5815a;
+}
+#martha-index-image {
+  border: 2px solid red;
+}
+#martha-index-image:hover #smile-on-hover {
+  opacity: 1;
+} */
+#index-content {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  margin-top: 12%;
+  margin-left: 25%;
+}
+#martha-index,
+#question-index {
+  /* border: 1px solid red; */
+  max-width: fit-content;
+  max-height: fit-content;
+}
+#martha-index {
+  z-index: 0;
+  box-shadow: -5px -5px 3em white;
+}
+#salutation-index {
+  /* border: 1px solid green; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 0;
+  margin-left: 4%;
+}
+#hey-there-index {
+  padding-left: 4%;
+  text-shadow: 0px 0px 5em currentColor;
+}
+#intro-index {
+  padding-left: 4%;
+  padding-top: 5%;
+}
+#smile-on-hover {
+  width: 10.5%;
+  height: 4%;
+  border-top: solid 2px #d5815a;
+  background-color: #d5815a;
+  margin-top: -52.3%;
+  margin-left: 44.5%;
+  position: relative;
+  z-index: 2;
+  border-bottom-right-radius: 200%;
+  border-bottom-left-radius: 200%;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+#martha-index:hover #smile-on-hover {
+  opacity: 1;
+}
+#name-question-index {
+  margin-top: 2em;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: Fredoka One;
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 2px 3em white;
+}
+#name-input-button-index {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-size: 2.5em;
+  margin: auto;
+  margin-top: 0.6em;
+  color: #ed0077;
+  /* text-shadow: 1px 2px 3em white; */
+}
+#player-name {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  width: 50%;
+  margin-left: -4%;
+  font-family: Fredoka One;
+  font-size: 0.8em;
+  color: #b4ff79;
+  padding-left: 0.3em;
+  text-shadow: 3px 3px #d5815a;
+}
+#name-enter-button {
+  width: 25%;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 0.6em;
+  font-family: Fredoka One;
+  margin-left: -3%;
+  border-radius: 0.3em;
+  box-shadow: 0 0 1em 0 #d5815a, inset 0 0 0.3em #d5815a;
+  color: #d5815a;
+  position: relative;
+}
+#name-enter-button:hover {
+  outline: 2px solid #d5815a;
+  box-shadow: 0 0 2em 0 #d5815a;
+  background-color: #d5815a;
+  color: #1e1f21;
+  transition: background-color 300ms;
+}
+#name-enter-button::before {
+  pointer-events: none;
+  content: "";
+  background-color: #d5815a;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1.5em);
+  opacity: 0.7;
+}
+#first-section-index {
+  height: 100%;
+}
+#second-section-index {
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  margin-top: 10%;
+}
+#second-index-question {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+  font-size: 2em;
+  transform: translate(0%, 100%);
+  color: white;
+  margin-left: -3%;
+  text-shadow: 0px 0px 3em white;
+}
+.third-index-section {
+  height: 100vh;
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: -8%;
+  align-items: center;
+}
+.second-index-div {
+  /* border: 2px solid red; */
+  width: 25vw;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#multiplication-index-background,
+#subtraction-index-background,
+#addition-index-background {
+  width: 100%;
+  height: 80%;
+  /* border: 2px solid red; */
+}
+#multiplication-index-background {
+  background: url(/multiplication\ background.jpg) no-repeat center / cover;
+}
+#multiplication-index-name,
+#subtraction-index-name,
+#addition-index-name {
+  height: 20%;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 2%;
+  color: white;
+}
+#addition-index-background {
+  background: url(/addition\ background.jpg) no-repeat center / cover;
+}
+#subtraction-index-background {
+  background: url(/subtraction\ background.jpg) no-repeat center / cover;
+}
+.multiplication-index {
+  box-shadow: 0 0 3em 0 #ed0077;
+  border: 1px solid #ed0077;
+  /* cursor: pointer; */
+  position: relative;
+}
+.multiplication-index:hover {
+  box-shadow: 0 0 8em #ed0077;
+  transform: scale(1.1, 1.1);
+  transition: scale 200ms;
+}
+.subtraction-index {
+  box-shadow: 0 0 3em 0 #b4ff79;
+  border: 1px solid #b4ff79;
+  /* cursor: pointer; */
+  position: relative;
+}
+.subtraction-index:hover {
+  box-shadow: 0 0 8em #b4ff79;
+  transform: scale(1.1, 1.1);
+  transition: scale 200ms;
+}
+.addition-index {
+  box-shadow: 0 0 3em 0 #d5815a;
+  border: 1px solid #d5815a;
+  /* cursor: pointer; */
+  position: relative;
+}
+.addition-index:hover {
+  box-shadow: 0 0 8em #d5815a;
+  transform: scale(1.1, 1.1);
+  transition: scale 200ms;
+}
+.multiplication-index::after {
+  content: "";
+  background-color: #ed0077;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: perspective(2em) rotateX(60deg) scale(0.4, 0.125);
+  filter: blur(6em);
+  opacity: 0.6;
+}
+.subtraction-index::after {
+  content: "";
+  background-color: #b4ff79;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: perspective(2em) rotateX(60deg) scale(0.4, 0.125);
+  filter: blur(6em);
+  opacity: 0.6;
+}
+.addition-index::after {
+  content: "";
+  background-color: #d5815a;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: perspective(2em) rotateX(60deg) scale(0.4, 0.125);
+  filter: blur(6em);
+  opacity: 0.6;
+}
